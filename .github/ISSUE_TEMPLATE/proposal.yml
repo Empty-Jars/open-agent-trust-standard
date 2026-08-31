@@ -1,0 +1,39 @@
+name: Proposal
+about: Propose a scoped foundation, architecture, governance, or specification change
+title: "[Proposal] "
+labels: ["status: needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Mission or user problem
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and exclusions
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria and evidence
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Security, privacy, financial, authority, and data implications
+    validations:
+      required: true
+  - type: dropdown
+    id: agent
+    attributes:
+      label: AI-agent suitability
+      options:
+        - Human-only accountable decision
+        - Agent-assisted with human review
+        - Suitable for a supervised agent
+    validations:
+      required: true
