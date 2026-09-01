@@ -25,6 +25,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           REPOSITORY: ${{ github.repository }}
           PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
+          EXPECTED_COMMIT_COUNT: ${{ github.event.pull_request.commits }}
         run: |
           python3 - <<'PY'
           import json
@@ -36,11 +37,42 @@ jobs:
           api_url = os.environ["API_URL"].rstrip("/")
           repository = os.environ["REPOSITORY"]
           pull_number = os.environ["PULL_REQUEST_NUMBER"]
+          expected_count = int(os.environ["EXPECTED_COMMIT_COUNT"])
           token = os.environ["GH_TOKEN"]
-          signoff = re.compile(r"^Signed-off-by:\s+.+\s+<[^<>]+>$", re.IGNORECASE)
+          signoff = re.compile(r"Signed-off-by:\s+.+\s+<[^<>\s]+@[^<>\s]+>", re.IGNORECASE)
+          trailer = re.compile(r"[A-Za-z0-9-]+:\s+.+")
           commits = []
 
-          for page in range(1, 101):
+          def terminal_trailers(message):
+              lines = message.rstrip().splitlines()
+              separators = [index for index, line in enumerate(lines) if not line.strip()]
+              if not separators:
+                  return []
+              block = lines[separators[-1] + 1 :]
+              if not block:
+                  return []
+              parsed = []
+              for line in block:
+                  if trailer.fullmatch(line):
+                      parsed.append(line)
+                  elif line.startswith((" ", "\t")) and parsed:
+                      continue
+                  else:
+                      return []
+              return parsed
+
+          if expected_count < 1:
+              print("The pull request contains no commits.", file=sys.stderr)
+              sys.exit(1)
+          if expected_count > 250:
+              print(
+                  "The pull request contains more than GitHub's 250-commit API limit. "
+                  "Split it into smaller pull requests so every commit can be verified.",
+                  file=sys.stderr,
+              )
+              sys.exit(1)
+
+          for page in range(1, 4):
               url = f"{api_url}/repos/{repository}/pulls/{pull_number}/commits?per_page=100&page={page}"
               request = urllib.request.Request(
                   url,
@@ -55,18 +87,20 @@ jobs:
               commits.extend(batch)
               if len(batch) < 100:
                   break
-          else:
-              print("Refusing to evaluate more than 10,000 commits.", file=sys.stderr)
-              sys.exit(1)
 
-          if not commits:
-              print("No commits were returned for this pull request.", file=sys.stderr)
+          if len(commits) != expected_count:
+              print(
+                  f"GitHub reported {expected_count} pull-request commits, but the DCO check "
+                  f"retrieved {len(commits)}. Failing closed.",
+                  file=sys.stderr,
+              )
               sys.exit(1)
 
           missing = []
           for commit in commits:
               message = commit["commit"]["message"]
-              if not any(signoff.match(line.strip()) for line in message.splitlines()):
+              trailers = terminal_trailers(message)
+              if not any(signoff.fullmatch(line.strip()) for line in trailers):
                   missing.append((commit["sha"][:12], message.splitlines()[0]))
 
           if missing:
