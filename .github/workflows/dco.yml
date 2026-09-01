@@ -44,8 +44,8 @@ jobs:
           commits = []
 
           def terminal_trailers(message):
-              lines = message.rstrip().splitlines()
-              separators = [index for index, line in enumerate(lines) if not line.strip()]
+              lines = message.rstrip("\n").split("\n")
+              separators = [index for index, line in enumerate(lines) if line == ""]
               if not separators:
                   return []
               block = lines[separators[-1] + 1 :]
@@ -100,8 +100,8 @@ jobs:
           for commit in commits:
               message = commit["commit"]["message"]
               trailers = terminal_trailers(message)
-              if not any(signoff.fullmatch(line.strip()) for line in trailers):
-                  missing.append((commit["sha"][:12], message.splitlines()[0]))
+              if not any(signoff.fullmatch(line) for line in trailers):
+                  missing.append((commit["sha"][:12], message.split("\n", 1)[0]))
 
           if missing:
               print("The following commits lack a DCO 1.1 Signed-off-by trailer:", file=sys.stderr)
