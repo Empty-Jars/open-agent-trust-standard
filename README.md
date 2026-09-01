@@ -20,3 +20,9 @@ Make third-party agents easier to assess, use, and hire through interoperable de
 The standard will not be a theological oracle, one universal trust score, pay-to-trust badge, proprietary marketplace format, or guarantee that every agent output is safe or correct.
 
 See [CHARTER.md](CHARTER.md), [CONTRIBUTING.md](CONTRIBUTING.md), and [docs/ROADMAP.md](docs/ROADMAP.md).
+
+## License
+
+Normative specifications and profiles use the Community Specification License 1.0. Schemas, validators, test suites, examples, adapters, reference software, and general repository documentation use the Apache License 2.0. Contributions use the Developer Certificate of Origin 1.1.
+
+See [LICENSE.md](LICENSE.md) for the authoritative directory mapping and [CONTRIBUTING.md](CONTRIBUTING.md) for contributor obligations.
