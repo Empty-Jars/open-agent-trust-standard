@@ -10,6 +10,7 @@ REQUIRED = [
     "NOTICE", "DCO",
     ".github/CODEOWNERS", ".github/PULL_REQUEST_TEMPLATE.md",
     ".github/ISSUE_TEMPLATE/proposal.yml",
+    ".github/workflows/validate.yml", ".github/workflows/dco.yml",
 ]
 errors = []
 for relative in REQUIRED:
