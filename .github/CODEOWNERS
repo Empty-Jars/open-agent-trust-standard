@@ -1,0 +1,23 @@
+# Default ownership
+* @velinov @pesho-vsn @JordyVelinovGit
+
+# Repository administration and contribution controls
+/.github/ @velinov @pesho-vsn @JordyVelinovGit
+/GOVERNANCE.md @velinov @pesho-vsn @JordyVelinovGit
+/MAINTAINERS.md @velinov @pesho-vsn @JordyVelinovGit
+/CONTRIBUTING.md @velinov @pesho-vsn @JordyVelinovGit
+/CODE_OF_CONDUCT.md @velinov @pesho-vsn @JordyVelinovGit
+/SECURITY.md @velinov @pesho-vsn @JordyVelinovGit
+/AGENTS.md @velinov @pesho-vsn @JordyVelinovGit
+/LICENSE.md @velinov @pesho-vsn
+/LICENSES/ @velinov @pesho-vsn
+/NOTICE @velinov @pesho-vsn
+/DCO @velinov @pesho-vsn
+
+# Normative standard, profiles, and conformance assets
+/specification/ @velinov @pesho-vsn @JordyVelinovGit
+/profiles/ @velinov @pesho-vsn @JordyVelinovGit
+/schemas/ @velinov @pesho-vsn @JordyVelinovGit
+/test-suite/ @velinov @pesho-vsn @JordyVelinovGit
+/docs/DECISIONS/ @velinov @pesho-vsn @JordyVelinovGit
+/docs/ROADMAP.md @velinov @pesho-vsn @JordyVelinovGit
