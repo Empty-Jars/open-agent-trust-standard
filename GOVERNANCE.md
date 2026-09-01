@@ -2,6 +2,14 @@
 
 This repository uses accountable human stewardship during its foundation stage.
 
+## Interim maintainers
+
+- `@velinov` — Administrator and Primary Maintainer
+- `@pesho-vsn` — Administrator and Primary Maintainer
+- `@JordyVelinovGit` — Maintainer and Code Owner
+
+The current scope and operating rules are recorded in [MAINTAINERS.md](MAINTAINERS.md) and `.github/CODEOWNERS`. Repository administration or code ownership does not by itself grant certification authority, institutional representation, conformance approval, or the right to bypass review.
+
 ## Decision types
 
 - Routine, reversible maintenance may be decided by the responsible maintainer.

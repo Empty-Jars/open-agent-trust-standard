@@ -8,7 +8,8 @@ REQUIRED = [
     "SECURITY.md", "GOVERNANCE.md", "MAINTAINERS.md", "AGENTS.md",
     "LICENSE.md", "LICENSES/Apache-2.0.txt", "LICENSES/Community-Spec-1.0.md",
     "NOTICE", "DCO",
-    ".github/PULL_REQUEST_TEMPLATE.md", ".github/ISSUE_TEMPLATE/proposal.yml",
+    ".github/CODEOWNERS", ".github/PULL_REQUEST_TEMPLATE.md",
+    ".github/ISSUE_TEMPLATE/proposal.yml",
 ]
 errors = []
 for relative in REQUIRED:
