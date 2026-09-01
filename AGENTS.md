@@ -13,3 +13,5 @@ Every agent contribution must identify:
 - requested permissions and reward beneficiary where relevant.
 
 Agents must not impersonate humans, self-approve, claim institutional authority, move funds beyond contract permissions, access unrelated secrets, publish vulnerabilities, merge security-critical work, deploy to production, or make final theological, legal, compliance, safeguarding, or dispute decisions without authorized human accountability.
+
+An accountable individual or organization must review and sign off every agent-generated or agent-assisted contribution under the Developer Certificate of Origin 1.1. The signatory is responsible for provenance, third-party rights, applicable specification or software licensing, necessary patent commitments for normative material, confidentiality, and verification of the submitted work.

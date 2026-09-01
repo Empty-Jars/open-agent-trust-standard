@@ -6,6 +6,8 @@ ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = [
     "README.md", "CHARTER.md", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md",
     "SECURITY.md", "GOVERNANCE.md", "MAINTAINERS.md", "AGENTS.md",
+    "LICENSE.md", "LICENSES/Apache-2.0.txt", "LICENSES/Community-Spec-1.0.md",
+    "NOTICE", "DCO",
     ".github/PULL_REQUEST_TEMPLATE.md", ".github/ISSUE_TEMPLATE/proposal.yml",
 ]
 errors = []
