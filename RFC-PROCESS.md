@@ -1,38 +1,45 @@
 # RFC Process
 
-RFCs are recorded proposals for material, cross-cutting, difficult-to-reverse, or normative changes. They make alternatives, risks, evidence, and accountable decisions reviewable.
+RFCs are recorded proposals for material, cross-cutting, difficult-to-reverse, or normative changes. They make alternatives, risks, evidence, objections, and accountable decisions reviewable.
 
-## When an RFC is required
+## Change classification
 
-Use an RFC for:
+- **Routine and reversible:** corrections or bounded maintenance may use an approved issue and pull request.
+- **Substantive implementation:** behavior, schema, validator, test, or interoperability changes require a proposal issue and may require an RFC when cross-cutting or difficult to reverse.
+- **High impact:** normative specification, governance, licensing/IPR, conformance, identity, authority, security, privacy, safeguarding, certification, publication, or breaking compatibility changes require an RFC and an ADR recording acceptance.
+- **Emergency security:** temporary containment may precede public process under [INCIDENT-RESPONSE.md](INCIDENT-RESPONSE.md), followed by retrospective review and an ADR.
 
-- new or changed normative requirements, profiles, conformance levels, or compatibility rules;
-- identity, authority, permission, privacy, safeguarding, security, revocation, or evidence models;
-- specification versioning or breaking schema and validator behavior;
-- governance, licensing/IPR, certification, or major interoperability policy;
-- decisions that materially bind multiple implementations or adopter groups.
-
-Routine corrections, clearly bounded implementation work, and reversible maintenance may use an issue and pull request. Security-sensitive proposals begin privately under [SECURITY.md](SECURITY.md) and become public only when coordinated disclosure is safe.
+A maintainer records the classification during triage. Disagreement about classification is a governance question and may be appealed.
 
 ## Lifecycle
 
-1. **Discuss:** Open a proposal issue describing the problem, scope, exclusions, evidence, risks, stakeholders, and accountable steward.
+1. **Discuss:** Open a proposal issue describing the problem, sponsor/steward, scope, non-goals, evidence, affected groups, risks, conflicts, dependencies, and desired outcome.
 2. **Draft:** Copy `docs/RFCS/0000-template.md` to `docs/RFCS/NNNN-short-title.md`. A maintainer assigns the number. Open a DCO-signed pull request linked to the issue.
-3. **Review:** The steward records affected groups, specialist reviewers, substantive objections, alternatives, and revisions. Review normally remains open for at least seven calendar days after the draft is ready; an urgent exception requires a recorded rationale and must not bypass required review or licensing terms.
-4. **Decision:** The responsible Primary Maintainer records consensus or a reasoned decision after required specialist and CODEOWNERS review. Silence is not consent. Authors and conflicted participants do not approve their own proposal.
-5. **Implement:** Acceptance authorizes only the recorded direction. Normative text, schemas, tests, migration material, and release decisions require their own reviewed pull requests.
-6. **Maintain:** Set the RFC status to Accepted, Rejected, Withdrawn, or Superseded and link later decisions.
+3. **Discussion:** Reviewers record alternatives, compatibility/migration, security/privacy/safeguarding, institutional-representation and IPR effects, specialist input, implementation/verification plans, unresolved questions, and substantive objections.
+4. **Final Comment Period:** When the draft is decision-ready, a maintainer announces an FCP. It lasts at least fourteen calendar days for high-impact RFCs and seven calendar days for other RFCs. A material revision restarts or extends FCP; the steward records why. Silence is not consent.
+5. **Decision:** Required reviewers record approval, rejection, or deferral. Accepted high-impact RFCs require at least two unconflicted human maintainer approvals, including a Primary Maintainer, plus formally appointed specialist review where applicable. The author, sponsor, and recused participants do not count toward the threshold.
+6. **ADR:** Acceptance is recorded in a linked ADR with participants, recusals, decision, rationale, alternatives, consequences, residual objections, and implementation conditions.
+7. **Implement:** Acceptance authorizes only the recorded direction. Normative text, schemas, tests, migration material, publication, and release decisions require their own reviewed pull requests.
+8. **Maintain:** Set status to Implemented when the accepted work is complete. Later material changes use a superseding RFC and ADR.
 
-## Decision standard
+RFC states are **Draft**, **Discussion**, **Final Comment Period**, **Accepted**, **Rejected**, **Withdrawn**, **Implemented**, and **Superseded**.
 
-Foundation-stage decisions seek documented rough consensus: major concerns are answered with evidence or explicitly accepted as residual risk. If consensus is not available, a Primary Maintainer may defer or reject the proposal, or record a narrow reversible decision. There is no pay-to-vote mechanism and contribution volume does not create decision authority.
+## Decision standard and deadlock
+
+Foundation-stage decisions seek documented rough consensus: major concerns are answered with evidence or explicitly accepted as residual risk. Contribution volume, payment, repository ownership, or silence does not create decision authority.
+
+If the approval threshold, required expertise, or unconflicted review cannot be obtained, the RFC is deferred. A Primary Maintainer may narrow a proposal to a reversible experiment, but may not waive high-impact independence, licensing, or safety requirements. Deadlock and any unresolved objection are recorded; appeal follows [CONFLICTS-AND-APPEALS.md](CONFLICTS-AND-APPEALS.md).
 
 An accepted RFC does not certify an agent, authorize a deployment, represent an institution, or guarantee implementation funding.
 
+## Emergency exception
+
+A qualified administrator may authorize a temporary, narrow, reversible security or safeguarding action when normal timing would create material risk. The action must not introduce normative requirements or external authority. A second unconflicted maintainer reviews it as soon as practical and normally within 72 hours. A retrospective issue and ADR record the facts safe to publish, authority used, duration, outcome, and whether the action is ratified, superseded, or reversed.
+
 ## Licensing
 
-RFC records under `docs/RFCS/` are process and design documentation licensed under Apache-2.0. Any accepted normative specification or profile text must be contributed under `specification/**` or `profiles/**`, where Community-Spec-1.0 applies. Authors must satisfy the DCO and the path-based terms in [LICENSE.md](LICENSE.md).
+RFC records under `docs/RFCS/` are process and design documentation licensed under Apache-2.0. Accepted normative specification or profile text must be contributed separately under `specification/**` or `profiles/**`, where Community-Spec-1.0 applies. Authors must satisfy the DCO and path-based terms in [LICENSE.md](LICENSE.md).
 
-## Appeals and changes
+## Record integrity
 
-Use [CONFLICTS-AND-APPEALS.md](CONFLICTS-AND-APPEALS.md) to challenge process, conflicts, or a decision. Material changes to an accepted RFC require a new RFC that supersedes it; minor clarifications may use a pull request if they do not alter the decision.
+Accepted and rejected RFCs are historical decision records. Do not silently rewrite their substance. Correct factual or typographical errors with an explicit dated correction that does not alter the decision; use a superseding RFC and ADR for changed direction.

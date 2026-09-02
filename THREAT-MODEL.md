@@ -6,6 +6,7 @@ This is a non-normative foundation threat model for the standard and its contrib
 
 ## Protected assets
 
+- safety, privacy, and participation of contributors, reviewers, adopters, affected people, children, and other vulnerable people;
 - identities of agents, creators, operators, sponsors, reviewers, and adopters;
 - authority, capability, permission, and delegation boundaries;
 - manifests, evidence, attestations, conformance results, and revocation state;
@@ -16,15 +17,18 @@ This is a non-normative foundation threat model for the standard and its contrib
 
 ## Actors and trust boundaries
 
-Actors include agent creators, operators, accountable sponsors, adopters, affected people, assessors, reviewers, maintainers, infrastructure and model providers, attackers, and the agents themselves. Important boundaries exist between declaration and evidence, identity and authority, capability and permission, sponsor and operator, public and restricted data, test and production, one project or tenant and another, and repository governance and adopter deployment decisions.
+Actors include good-faith, negligent, malicious, coerced, or compromised contributors and maintainers; agent creators, operators, accountable sponsors, adopters, affected people, assessors, reviewers, infrastructure and model providers, impersonators, spammers, Sybil/reward manipulators, attackers, and the agents themselves. Important boundaries exist between declaration and evidence, identity and authority, capability and permission, sponsor and operator, public and restricted data, test and production, one project or tenant and another, and repository governance and adopter deployment decisions.
 
 Third-party models, tools, plugins, data sources, identity providers, registries, chains, and hosted services are separate trust domains. Their claims must not be inherited without evidence.
+
+Repository-specific boundaries include contributor or agent to public issue/PR; local environment or model provider to public repository; fork/untrusted branch to Actions; reviewer to approval/merge; maintainer account to settings, Apps, secrets, tags, and releases; private reporter to triage recipients; and draft standard to public adopter claims.
 
 ## Assumptions
 
 - AI-agent output may be wrong, manipulated, non-deterministic, or hostile.
 - Human approval can also fail through error, conflict, coercion, overload, or compromised accounts.
 - A valid identity does not prove authority, safety, competence, or current permission.
+- DCO trailers, GitHub accounts, sponsor declarations, and agent disclosures are attestations, not identity verification or proof that content is safe.
 - Declarations and evidence become stale; runtime behavior and dependencies change.
 - Public artifacts may be copied, replayed, selectively quoted, or detached from version and revocation context.
 - Higher-risk deployments require controls beyond the core standard.
@@ -71,8 +75,23 @@ Threats include denial of service, spam, moderation abuse, maintainer compromise
 
 Threats include delayed detection, inability to identify affected versions, continued use after compromise, incomplete credential rotation, silent evidence withdrawal, and uncoordinated disclosure. Controls should define incident contacts, versioned impact, containment, notification, revocation propagation, recovery evidence, and post-incident correction without publishing sensitive details prematurely.
 
+## Contributor-promotion gates
+
+Before broader promotion beyond bounded stewarded issues, maintainers verify and record:
+
+- distinct confidential security and conduct/safeguarding routes, conflict reassignment, response targets, and sensitive-evidence limits;
+- branch protection, required checks, CODEOWNERS review, current-head approval, conversation resolution, linear history, and disabled force push/deletion;
+- organization two-factor authentication for members with repository access, least privilege, recovery coverage, and periodic access review;
+- public issue/PR warnings, DCO privacy notice, AI-provider/data rules, moderation, appeals, maintainer lifecycle, and incident/takedown handling;
+- no unprotected release/tag path: releases remain unused until a separately approved process defines two-person authorization, provenance, verification, correction, and revocation;
+- any missing specialist expertise or technically unenforced procedural approval threshold is explicitly disclosed and handled by pause or documented independent advice.
+
+## Ownership and review triggers
+
+`THREAT-MODEL.md`, security, incident, governance, workflow, conformance, and maintainer-access changes require explicit CODEOWNERS review and the high-impact approvals in [RFC-PROCESS.md](RFC-PROCESS.md). Review this model at least annually and after a material incident, new normative profile, conformance mechanism, workflow or dependency execution path, release process, privileged-role change, confidential-data flow, model/provider class, financial/infrastructure capability, or evidence/revocation mechanism.
+
 ## Review expectations
 
 Every normative proposal should identify affected assets, actors, boundaries, abuse cases, mitigations, residual risk, verification evidence, and revocation behavior. Security and safeguarding reviewers should identify who can be harmed, who can authorize the action, who receives confidential reports, how conflicts are reassigned, and what must happen when a sponsor, credential, model, dependency, or attestation is withdrawn. Implementers and adopters must extend this model for their own systems, jurisdictions, people, data, integrations, and deployment risk.
 
-Report vulnerabilities through [SECURITY.md](SECURITY.md). Propose model changes through [RFC-PROCESS.md](RFC-PROCESS.md).
+Report and contain incidents through [INCIDENT-RESPONSE.md](INCIDENT-RESPONSE.md). Propose model changes through [RFC-PROCESS.md](RFC-PROCESS.md).

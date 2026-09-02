@@ -5,22 +5,27 @@ This repository develops an open standard and supporting materials. It does not 
 ## Where to ask
 
 - Use [GitHub Discussions](https://github.com/Empty-Jars/open-agent-trust-standard/discussions) for questions, implementation experience, and early ideas.
-- Use a [proposal issue](https://github.com/Empty-Jars/open-agent-trust-standard/issues/new?template=proposal.yml) for bounded changes with acceptance criteria.
-- Use a pull request only after an issue or maintainer has confirmed scope for material work.
-- Follow [SECURITY.md](SECURITY.md) for vulnerabilities, exposed secrets, privacy incidents, or bypasses. Never place sensitive reports in public issues or Discussions.
-- Follow [MODERATION.md](MODERATION.md) for confidential conduct or moderation concerns.
+- Use a [proposal issue](https://github.com/Empty-Jars/open-agent-trust-standard/issues/new?template=proposal.yml) for a proposed change with acceptance criteria.
+- Use a [general report](https://github.com/Empty-Jars/open-agent-trust-standard/issues/new?template=report.yml) for a non-confidential documentation, process, interoperability, or repository problem.
+- Open a pull request only after issue scope is accepted for material work.
+- Follow [INCIDENT-RESPONSE.md](INCIDENT-RESPONSE.md) for vulnerabilities, exposed secrets, privacy incidents, conduct, safeguarding, retaliation, sensitive takedown, or maintainer conflicts.
 
-Do not send credentials, private keys, personal records, safeguarding information, confidential institutional material, or active exploit details through public channels.
+Do not send credentials, private keys, personal or pastoral records, safeguarding evidence, confidential institutional material, or active exploit details through public channels.
 
 ## Foundation-stage response targets
 
 Maintainers aim to:
 
-- triage a new public issue or Discussion within seven calendar days;
-- identify a steward, next step, or reason for closure within fourteen calendar days;
-- review a ready pull request within fourteen calendar days.
+- acknowledge a public issue or Discussion within seven calendar days;
+- classify a proposal/RFC or identify missing information within ten calendar days;
+- provide a first review or status update on a ready pull request within seven calendar days;
+- acknowledge security reports within two business days;
+- acknowledge conduct, privacy, or safeguarding reports within three business days;
+- acknowledge appeals within five business days and target disposition within thirty calendar days.
 
-These are targets, not service-level guarantees. Volunteer availability, specialist review, safeguarding, legal, security, or governance needs may require more time. A maintainer should post a status note when a material delay is known and safe to disclose.
+These are targets, not service-level guarantees. Volunteer availability, specialist review, safeguarding, legal, security, or governance needs may require more time. A maintainer should post a status note or agree a private update cadence when a material delay is known and safe to disclose.
+
+If a public-response target is missed, add one concise status request to the issue or Discussion and wait at least seven further days. For a missed confidential target or a conflict with the recipient, use the alternate minimal-notice route in [INCIDENT-RESPONSE.md](INCIDENT-RESPONSE.md); do not duplicate sensitive evidence across channels.
 
 ## What maintainers can provide
 

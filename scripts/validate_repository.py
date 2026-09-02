@@ -5,15 +5,16 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = [
     "README.md", "CHARTER.md", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md",
-    "SECURITY.md", "SUPPORT.md", "THREAT-MODEL.md", "GOVERNANCE.md",
+    "SECURITY.md", "INCIDENT-RESPONSE.md", "SUPPORT.md", "THREAT-MODEL.md", "GOVERNANCE.md",
     "RFC-PROCESS.md", "CONFLICTS-AND-APPEALS.md", "MODERATION.md",
-    "MAINTAINERS.md", "AGENTS.md", "docs/ISSUE-LIFECYCLE.md",
+    "MAINTAINERS.md", "MAINTAINER-LIFECYCLE.md", "AGENTS.md", "docs/ISSUE-LIFECYCLE.md",
     "docs/RFCS/README.md", "docs/RFCS/0000-template.md",
     "docs/DECISIONS/README.md", "docs/DECISIONS/0000-template.md",
     "LICENSE.md", "LICENSES/Apache-2.0.txt", "LICENSES/Community-Spec-1.0.md",
     "NOTICE", "DCO",
     ".github/CODEOWNERS", ".github/PULL_REQUEST_TEMPLATE.md",
-    ".github/ISSUE_TEMPLATE/proposal.yml", ".github/ISSUE_TEMPLATE/config.yml",
+    ".github/ISSUE_TEMPLATE/proposal.yml", ".github/ISSUE_TEMPLATE/report.yml",
+    ".github/ISSUE_TEMPLATE/config.yml",
     ".github/workflows/validate.yml", ".github/workflows/dco.yml",
 ]
 errors = []

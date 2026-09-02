@@ -18,11 +18,11 @@ All three maintainers are listed in `.github/CODEOWNERS`. Code ownership require
 
 - Changes use branches and pull requests; maintainers should not push routine changes directly to `main`.
 - A maintainer must not be the sole reviewer of their own material change.
-- Governance, licensing/IPR, normative specification, conformance, security, safeguarding, certification, and publication changes require review from a Primary Maintainer and any relevant specialist.
+- Governance, licensing/IPR, normative specification, conformance, security, safeguarding, certification, and publication changes require at least two unconflicted human maintainer approvals including a Primary Maintainer and, where formally appointed, the relevant specialist. If required expertise or independence is unavailable, pause or obtain documented outside advice rather than implying specialist approval.
 - Conflicts of interest must be disclosed and may require recusal.
 - Agent creators, operators, assessors, and sponsors cannot certify their own systems.
 - Access may be suspended during a security, conduct, or accountability incident.
-- Appointments remain interim until the maintainer nomination, review, term, removal, and succession process is adopted.
+- Appointments, terms, role/access review, suspension, removal, departure, and succession follow [MAINTAINER-LIFECYCLE.md](MAINTAINER-LIFECYCLE.md).
 
 ## Additional stewardship still to appoint
 
@@ -35,4 +35,4 @@ All three maintainers are listed in `.github/CODEOWNERS`. Code ownership require
 - Conformance and interoperability
 - Contributor/community stewardship
 
-Appointments, scope, conflicts, removal, and succession will be recorded publicly before additional authority is delegated.
+Appointments, scope, terms, conflicts, access, review dates, removal, and succession are recorded under [MAINTAINER-LIFECYCLE.md](MAINTAINER-LIFECYCLE.md) before additional authority is delegated.

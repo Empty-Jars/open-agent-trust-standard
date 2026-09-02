@@ -25,9 +25,9 @@ The standard will not be a theological oracle, one universal trust score, pay-to
 - Ask questions through [SUPPORT.md](SUPPORT.md).
 - Review the [foundation threat model](THREAT-MODEL.md).
 - Use the [RFC process](RFC-PROCESS.md) for normative or cross-cutting proposals and [ADRs](docs/DECISIONS/README.md) for durable implementation decisions.
-- Follow the [Code of Conduct](CODE_OF_CONDUCT.md), [moderation procedure](MODERATION.md), and [conflict and appeal process](CONFLICTS-AND-APPEALS.md).
+- Follow the [Code of Conduct](CODE_OF_CONDUCT.md), [moderation procedure](MODERATION.md), [incident-response procedure](INCIDENT-RESPONSE.md), and [conflict and appeal process](CONFLICTS-AND-APPEALS.md).
 
-See [CHARTER.md](CHARTER.md), [GOVERNANCE.md](GOVERNANCE.md), and [docs/ROADMAP.md](docs/ROADMAP.md) for direction and stewardship.
+See [CHARTER.md](CHARTER.md), [GOVERNANCE.md](GOVERNANCE.md), [MAINTAINERS.md](MAINTAINERS.md), [maintainer lifecycle](MAINTAINER-LIFECYCLE.md), and [docs/ROADMAP.md](docs/ROADMAP.md) for direction and stewardship.
 
 ## License
 

@@ -1,10 +1,15 @@
 # RFC NNNN: Short title
 
 - **Status:** Draft
+- **Change class:** routine / substantive / high-impact
 - **Author(s):** GitHub handles or names
 - **Interim steward:** `@handle`
 - **Created:** YYYY-MM-DD
 - **Discussion:** issue URL
+- **Required reviewers/approvals:**
+- **Conflicts/recusals:** none or safe summary
+- **Review window opened:** YYYY-MM-DD
+- **Final-comment window:** YYYY-MM-DD to YYYY-MM-DD, or not started
 - **Supersedes:** none
 - **Superseded by:** none
 
@@ -54,6 +59,10 @@ Define implementation stages, tests or evidence, rollback, deprecation, and succ
 
 -
 
+## Objections and dissent
+
+Record substantive objections, responses, unresolved minority views, and whether a material revision reset the review window.
+
 ## Decision record
 
 To be completed by the accountable decision-maker:
@@ -61,6 +70,8 @@ To be completed by the accountable decision-maker:
 - **Decision:**
 - **Date:**
 - **Required reviewers:**
+- **Approvals and commit reviewed:**
 - **Conflicts/recusals:**
 - **Rationale and dissent:**
+- **Linked ADR:**
 - **Follow-up issues or pull requests:**
