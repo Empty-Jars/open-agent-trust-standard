@@ -13,8 +13,9 @@ The current scope and operating rules are recorded in [MAINTAINERS.md](MAINTAINE
 ## Decision types
 
 - Routine, reversible maintenance may be decided by the responsible maintainer.
-- Product, protocol, standard, security, privacy, financial, identity, or governance decisions require a recorded issue, RFC, or ADR and review by the relevant steward.
-- Trademark, legal, production, treasury, institutional-representation, and high-risk agent decisions require specifically authorized accountable humans.
+- Substantive implementation changes require an accepted issue and may require an RFC or ADR under the recorded change classification.
+- Normative specification, governance, licensing/IPR, conformance, identity, authority, security, privacy, safeguarding, certification, publication, and breaking-compatibility decisions require an RFC, a linked ADR when accepted, and at least two unconflicted human maintainer approvals including a Primary Maintainer.
+- Trademark, legal, production, treasury, institutional-representation, and high-risk agent decisions require separately and explicitly authorized accountable humans with applicable expertise; repository role alone is insufficient.
 
 Material and normative proposals follow [RFC-PROCESS.md](RFC-PROCESS.md). Significant supporting architecture decisions follow the [ADR procedure](docs/DECISIONS/README.md). An accepted RFC or ADR does not by itself authorize implementation, publication, certification, deployment, funding, or institutional representation.
 
@@ -26,4 +27,4 @@ Accepted contributions do not automatically grant authority, representation, mai
 
 Reviewers and decision-makers disclose material conflicts and recuse when required. Contributors and affected participants may request review by a different qualified steward. The complete procedure is in [CONFLICTS-AND-APPEALS.md](CONFLICTS-AND-APPEALS.md).
 
-Conduct enforcement follows [MODERATION.md](MODERATION.md). Issue stewardship and closure follow [docs/ISSUE-LIFECYCLE.md](docs/ISSUE-LIFECYCLE.md). Foundation-stage response targets are documented in [SUPPORT.md](SUPPORT.md).
+Conduct enforcement follows [MODERATION.md](MODERATION.md). Incident and sensitive-content handling follow [INCIDENT-RESPONSE.md](INCIDENT-RESPONSE.md). Maintainer appointment, terms, access review, suspension, removal, and succession follow [MAINTAINER-LIFECYCLE.md](MAINTAINER-LIFECYCLE.md). Issue stewardship and closure follow [docs/ISSUE-LIFECYCLE.md](docs/ISSUE-LIFECYCLE.md). Foundation-stage response targets are documented in [SUPPORT.md](SUPPORT.md).

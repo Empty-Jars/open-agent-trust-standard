@@ -19,4 +19,4 @@ Harassment, threats, discriminatory abuse, doxxing, secret disclosure, fraud, im
 
 ## Reporting
 
-Do not publish sensitive reports in a public issue. Report harassment, threats, doxxing, retaliation, safeguarding, private-data, or maintainer-conflict concerns confidentially to [security@emptyjars.net](mailto:security@emptyjars.net). Vulnerabilities follow [SECURITY.md](SECURITY.md). Repository maintainers may act under [MODERATION.md](MODERATION.md), with conflict safeguards and an appeal route under [CONFLICTS-AND-APPEALS.md](CONFLICTS-AND-APPEALS.md).
+Do not publish sensitive reports in a public issue. Report harassment, threats, doxxing, retaliation, safeguarding, private-data, or maintainer-conflict concerns confidentially to `empty-jars-manager@agentmail.to`. If the report concerns that mailbox or its operator, use the minimal alternate-notice route in [INCIDENT-RESPONSE.md](INCIDENT-RESPONSE.md). Vulnerabilities follow [SECURITY.md](SECURITY.md). Maintainers act under [MODERATION.md](MODERATION.md), with conflict safeguards and appeals under [CONFLICTS-AND-APPEALS.md](CONFLICTS-AND-APPEALS.md).

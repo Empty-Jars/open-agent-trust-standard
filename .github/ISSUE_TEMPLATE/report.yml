@@ -1,0 +1,67 @@
+name: General report
+description: Report a bounded documentation, process, interoperability, or repository problem that is not a confidential security or conduct matter.
+title: "[Report]: "
+labels:
+  - "status: needs-triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not post credentials, private keys, personal or pastoral records, safeguarding evidence, confidential institutional information, active exploit details, or private conflict reports here. Use the confidential routes in SECURITY.md, MODERATION.md, and INCIDENT-RESPONSE.md.
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Documentation defect
+        - Repository process problem
+        - Interoperability or compatibility concern
+        - Validator, schema, example, or test problem
+        - Accessibility or participation barrier
+        - Other non-confidential problem
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened, where, and why does it matter?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction or evidence
+      description: Provide minimized public steps, references, versions, or examples. Redact sensitive data.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected outcome
+      description: What observable result would resolve this report?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and exclusions
+      description: Identify affected files, versions, users, and what this report does not request.
+    validations:
+      required: true
+  - type: checkboxes
+    id: risk
+    attributes:
+      label: Risk screening
+      options:
+        - label: I confirm this report contains no credentials, private keys, personal or pastoral records, safeguarding evidence, confidential institutional information, or active exploit details.
+          required: true
+        - label: I considered security, privacy, safeguarding, compatibility, representation, and licensing implications and described any relevant non-confidential concerns above.
+          required: true
+  - type: textarea
+    id: agent
+    attributes:
+      label: AI-agent involvement
+      description: Identify the agent; accountable individual or organization sponsor; operator/controller when different; material models, tools, and external providers; provenance and evidence; human reviewers/checkpoints; and requested permissions and reward beneficiary where relevant. State "None" if no agent was involved. Do not expose confidential operational details.
+    validations:
+      required: true

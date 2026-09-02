@@ -6,3 +6,6 @@ contact_links:
   - name: Support question or early idea
     url: https://github.com/Empty-Jars/open-agent-trust-standard/discussions
     about: Ask questions and discuss ideas before opening a bounded proposal.
+  - name: Confidential conduct, safeguarding, or privacy report
+    url: https://github.com/Empty-Jars/open-agent-trust-standard/blob/main/INCIDENT-RESPONSE.md
+    about: Read the confidential routes and conflict-safe handling limits before sending sensitive information.

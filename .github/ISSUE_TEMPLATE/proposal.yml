@@ -3,6 +3,10 @@ about: Propose a scoped foundation, architecture, governance, or specification c
 title: "[Proposal] "
 labels: ["status: needs-triage"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not post credentials, private keys, personal or pastoral records, safeguarding evidence, confidential institutional information, active exploit details, or private conflict reports here. Use the confidential routes in SECURITY.md, MODERATION.md, and INCIDENT-RESPONSE.md.
   - type: textarea
     id: problem
     attributes:
@@ -31,7 +35,7 @@ body:
   - type: textarea
     id: risk
     attributes:
-      label: Security, privacy, financial, authority, and data implications
+      label: Security, privacy, safeguarding, compatibility, financial, authority, representation, IPR, and data implications
     validations:
       required: true
   - type: dropdown
@@ -42,5 +46,12 @@ body:
         - Human-only accountable decision
         - Agent-assisted with human review
         - Suitable for a supervised agent
+    validations:
+      required: true
+  - type: textarea
+    id: disclosure
+    attributes:
+      label: AI-agent involvement
+      description: Identify the agent; accountable individual or organization sponsor; operator/controller when different; material models, tools, and external providers; provenance and evidence; human reviewers/checkpoints; and requested permissions and reward beneficiary where relevant. State "None" if no agent was involved. Do not expose confidential operational details.
     validations:
       required: true
