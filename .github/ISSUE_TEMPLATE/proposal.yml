@@ -16,6 +16,13 @@ body:
     validations:
       required: true
   - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies, prior decisions, and requested interim steward
+      description: Link related issues/RFCs/ADRs and name the maintainer or working-group steward requested to coordinate review.
+    validations:
+      required: true
+  - type: textarea
     id: acceptance
     attributes:
       label: Acceptance criteria and evidence

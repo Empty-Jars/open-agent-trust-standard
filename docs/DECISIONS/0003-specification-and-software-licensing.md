@@ -20,4 +20,4 @@ The Community Specification License was designed for collaborative specification
 - Normative contributions must comply with Community-Spec-1.0 contribution terms.
 - Contributions without valid DCO sign-off cannot be merged.
 - Incompatible third-party material cannot be accepted.
-- A DCO status check should become required when GitHub workflow permission is available.
+- The protected default branch requires the `DCO sign-off` status check; contributions without a valid trailer cannot merge.

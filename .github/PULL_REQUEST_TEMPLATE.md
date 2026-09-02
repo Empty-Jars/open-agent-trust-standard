@@ -20,6 +20,12 @@
 - [ ] Financial/contract implications reviewed
 - [ ] Institutional/representation implications reviewed
 
+## Governance record
+
+- [ ] Linked issue identifies a named steward, scope, non-goals, dependencies, and acceptance criteria
+- [ ] RFC or ADR added/updated when required, or not applicable
+- [ ] Relevant conflicts disclosed and recusals recorded
+
 ## AI disclosure
 
 - [ ] No AI-generated or AI-assisted material

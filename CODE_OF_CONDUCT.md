@@ -19,4 +19,4 @@ Harassment, threats, discriminatory abuse, doxxing, secret disclosure, fraud, im
 
 ## Reporting
 
-Do not publish sensitive reports in a public issue. Until a dedicated confidential channel is approved, contact an authorized repository steward directly. Repository maintainers may remove content or restrict participation when necessary, with an auditable explanation and appeal route where safe.
+Do not publish sensitive reports in a public issue. Report harassment, threats, doxxing, retaliation, safeguarding, private-data, or maintainer-conflict concerns confidentially to [security@emptyjars.net](mailto:security@emptyjars.net). Vulnerabilities follow [SECURITY.md](SECURITY.md). Repository maintainers may act under [MODERATION.md](MODERATION.md), with conflict safeguards and an appeal route under [CONFLICTS-AND-APPEALS.md](CONFLICTS-AND-APPEALS.md).

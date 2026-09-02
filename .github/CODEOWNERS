@@ -6,8 +6,14 @@
 /GOVERNANCE.md @velinov @pesho-vsn @JordyVelinovGit
 /MAINTAINERS.md @velinov @pesho-vsn @JordyVelinovGit
 /CONTRIBUTING.md @velinov @pesho-vsn @JordyVelinovGit
+/CHARTER.md @velinov @pesho-vsn @JordyVelinovGit
 /CODE_OF_CONDUCT.md @velinov @pesho-vsn @JordyVelinovGit
 /SECURITY.md @velinov @pesho-vsn @JordyVelinovGit
+/SUPPORT.md @velinov @pesho-vsn @JordyVelinovGit
+/THREAT-MODEL.md @velinov @pesho-vsn @JordyVelinovGit
+/RFC-PROCESS.md @velinov @pesho-vsn @JordyVelinovGit
+/CONFLICTS-AND-APPEALS.md @velinov @pesho-vsn @JordyVelinovGit
+/MODERATION.md @velinov @pesho-vsn @JordyVelinovGit
 /AGENTS.md @velinov @pesho-vsn @JordyVelinovGit
 /LICENSE.md @velinov @pesho-vsn
 /LICENSES/ @velinov @pesho-vsn
@@ -20,4 +26,6 @@
 /schemas/ @velinov @pesho-vsn @JordyVelinovGit
 /test-suite/ @velinov @pesho-vsn @JordyVelinovGit
 /docs/DECISIONS/ @velinov @pesho-vsn @JordyVelinovGit
+/docs/RFCS/ @velinov @pesho-vsn @JordyVelinovGit
+/docs/ISSUE-LIFECYCLE.md @velinov @pesho-vsn @JordyVelinovGit
 /docs/ROADMAP.md @velinov @pesho-vsn @JordyVelinovGit
