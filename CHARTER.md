@@ -22,4 +22,4 @@ The Empty Jars collaboration platform may implement this standard, but cannot pr
 
 ## Naming and trademarks
 
-Protected Church terms are not used in the project or repository name. Descriptive references require restrained factual wording, non-affiliation language, attribution, and General Conference legal/trademark clearance before public release.
+Project names and branding remain neutral. Descriptive prose may identify the communities served when that context is relevant.

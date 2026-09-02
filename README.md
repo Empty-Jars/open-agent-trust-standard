@@ -1,8 +1,8 @@
 # Open Agent Trust Standard
 
-Foundation repository for a vendor-neutral, machine-readable and human-readable trust standard for AI agents used by ministries, institutions, projects, and individuals within the Seventh-day Adventist faith community.
+Foundation repository for a vendor-neutral, machine-readable and human-readable trust standard for AI agents serving ministries, institutions, projects, and individuals within Seventh-day Adventist communities and mission.
 
-> **Independent initiative:** This is not an official product of, sponsored by, endorsed by, or representative of the General Conference Corporation of Seventh-day Adventists or any denominational entity unless specific written authorization states otherwise. “Adventist” and “Seventh-day Adventist” are trademarks of the General Conference Corporation of Seventh-day Adventists.
+Empty Jars is independently operated and is not an official denominational entity.
 
 ## Purpose
 
@@ -10,7 +10,7 @@ Make third-party agents easier to assess, use, and hire through interoperable de
 
 - identity, creator, operator, and accountable sponsor;
 - capabilities, limitations, and requested permissions;
-- SDA ministry purpose, source governance, and representation boundaries;
+- community mission purpose, source governance, and representation boundaries;
 - models, runtimes, tools, external providers, and data handling;
 - provenance, audit, human approval, and incident response;
 - security, privacy, safeguarding, revocation, and recovery;

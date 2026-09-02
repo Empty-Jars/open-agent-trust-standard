@@ -4,8 +4,8 @@
 
 ## Decision
 
-Use `open-agent-trust-standard` as the working neutral repository name. Do not use “Adventist,” “Seventh-day Adventist,” “SDA,” derivatives, or Church visual identity in project branding without express written authorization.
+Use `open-agent-trust-standard` as the working neutral repository name. Keep project naming and visual identity neutral rather than using Church names or marks as branding.
 
 ## Consequence
 
-The intended community may be identified only in necessary descriptive prose with a clear independence disclaimer and trademark attribution. Written legal/trademark guidance is required before public release.
+Descriptive prose may clearly identify the intended community where that context is relevant. A concise independence statement belongs in central project information rather than being repeated throughout the repository.
