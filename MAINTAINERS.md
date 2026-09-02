@@ -8,9 +8,11 @@ These interim appointments establish accountable repository stewardship while th
 |---|---|---|
 | [@velinov](https://github.com/velinov) | Administrator and Primary Maintainer | Repository administration, governance, final maintainer coordination, release/publication authorization, and escalation |
 | [@pesho-vsn](https://github.com/pesho-vsn) | Administrator and Primary Maintainer | Repository administration, governance, maintainer coordination, technical/specification review, and escalation |
-| [@JordyVelinovGit](https://github.com/JordyVelinovGit) | Maintainer and Code Owner | Specification/code review, issue stewardship, contributor support, and ownership review across the repository |
+| [@JordyVelinovGit](https://github.com/JordyVelinovGit) | Organization Owner, Maintainer, and Code Owner | Backup organization administration for operational continuity; specification/code review, issue stewardship, contributor support, and ownership review across the repository |
 
 All three maintainers are listed in `.github/CODEOWNERS`. Code ownership requires review but does not independently grant certification authority, institutional representation, conformance approval, or the right to bypass governance.
+
+`@JordyVelinovGit` retains organization-owner authority specifically for operational continuity and backup organization administration. Routine repository work remains subject to the same branch, review, conflict, and authorization rules as every other maintainer action; owner access is not a standing exception to governance.
 
 ## Interim operating rules
 
