@@ -4,7 +4,7 @@ Thank you for helping establish this project.
 
 ## Foundation-stage participation
 
-The repository is initially private while governance, security, and public-release safeguards are completed. Contributors may participate in discovery, issue discussion, requirements, threat modeling, architecture proposals, documentation review, and approved scoped tasks.
+The repository is public and in foundation stage. Contributors may participate in discovery, issue discussion, requirements, threat modeling, architecture proposals, documentation review, and approved scoped tasks. Public availability does not mean that every proposal is ready for implementation or that sensitive material belongs in public channels.
 
 ## Licenses and contributor certification
 
@@ -28,11 +28,14 @@ By contributing normative material, the contributor also agrees to the Community
 ## Before starting work
 
 1. Read the README, governance, security, and agent policies.
-2. Comment on or request assignment to an approved issue.
-3. Confirm scope, acceptance criteria, evidence, privacy/security implications, and required human checkpoints.
-4. Use a feature branch and pull request; do not push directly to `main`.
-5. Disclose AI-generated or AI-assisted work and identify material tools/models.
-6. Add tests or verification evidence appropriate to the change.
+2. Read the [support](SUPPORT.md), [issue lifecycle](docs/ISSUE-LIFECYCLE.md), and [threat model](THREAT-MODEL.md).
+3. Comment on or request stewardship of an approved issue.
+4. Confirm scope, non-goals, acceptance criteria, evidence, dependencies, privacy/security implications, and required human checkpoints.
+5. Determine whether the change requires an [RFC](RFC-PROCESS.md) or an [ADR](docs/DECISIONS/README.md).
+6. Disclose relevant conflicts and follow [CONFLICTS-AND-APPEALS.md](CONFLICTS-AND-APPEALS.md).
+7. Use a feature branch and pull request; do not push directly to `main`.
+8. Disclose AI-generated or AI-assisted work and identify material tools/models.
+9. Add tests or verification evidence appropriate to the change.
 
 ## AI-generated or AI-assisted contributions
 

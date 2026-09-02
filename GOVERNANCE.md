@@ -16,10 +16,14 @@ The current scope and operating rules are recorded in [MAINTAINERS.md](MAINTAINE
 - Product, protocol, standard, security, privacy, financial, identity, or governance decisions require a recorded issue, RFC, or ADR and review by the relevant steward.
 - Trademark, legal, production, treasury, institutional-representation, and high-risk agent decisions require specifically authorized accountable humans.
 
+Material and normative proposals follow [RFC-PROCESS.md](RFC-PROCESS.md). Significant supporting architecture decisions follow the [ADR procedure](docs/DECISIONS/README.md). An accepted RFC or ADR does not by itself authorize implementation, publication, certification, deployment, funding, or institutional representation.
+
 ## Contributions
 
 Accepted contributions do not automatically grant authority, representation, maintainer status, financial control, or deployment access. Progression is based on accepted-work quality, reliability, judgment, collaboration, review ability, security awareness, and adherence to governance.
 
 ## Conflicts and appeals
 
-Reviewers and decision-makers disclose material conflicts. A contributor may request reconsideration by a different qualified steward. Governance will be expanded before public launch.
+Reviewers and decision-makers disclose material conflicts and recuse when required. Contributors and affected participants may request review by a different qualified steward. The complete procedure is in [CONFLICTS-AND-APPEALS.md](CONFLICTS-AND-APPEALS.md).
+
+Conduct enforcement follows [MODERATION.md](MODERATION.md). Issue stewardship and closure follow [docs/ISSUE-LIFECYCLE.md](docs/ISSUE-LIFECYCLE.md). Foundation-stage response targets are documented in [SUPPORT.md](SUPPORT.md).

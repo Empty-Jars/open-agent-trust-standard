@@ -19,7 +19,15 @@ Make third-party agents easier to assess, use, and hire through interoperable de
 
 The standard will not be a theological oracle, one universal trust score, pay-to-trust badge, proprietary marketplace format, or guarantee that every agent output is safe or correct.
 
-See [CHARTER.md](CHARTER.md), [CONTRIBUTING.md](CONTRIBUTING.md), and [docs/ROADMAP.md](docs/ROADMAP.md).
+## Participate
+
+- Start with [CONTRIBUTING.md](CONTRIBUTING.md) and the [issue lifecycle](docs/ISSUE-LIFECYCLE.md).
+- Ask questions through [SUPPORT.md](SUPPORT.md).
+- Review the [foundation threat model](THREAT-MODEL.md).
+- Use the [RFC process](RFC-PROCESS.md) for normative or cross-cutting proposals and [ADRs](docs/DECISIONS/README.md) for durable implementation decisions.
+- Follow the [Code of Conduct](CODE_OF_CONDUCT.md), [moderation procedure](MODERATION.md), and [conflict and appeal process](CONFLICTS-AND-APPEALS.md).
+
+See [CHARTER.md](CHARTER.md), [GOVERNANCE.md](GOVERNANCE.md), and [docs/ROADMAP.md](docs/ROADMAP.md) for direction and stewardship.
 
 ## License
 

@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Sensitive security report
-    url: https://github.com/Empty-Jars
-    about: Do not disclose vulnerabilities publicly; contact an authorized steward privately.
+  - name: Confidential security report
+    url: https://github.com/Empty-Jars/open-agent-trust-standard/security/advisories/new
+    about: Report vulnerabilities privately; do not disclose sensitive details in a public issue.
+  - name: Support question or early idea
+    url: https://github.com/Empty-Jars/open-agent-trust-standard/discussions
+    about: Ask questions and discuss ideas before opening a bounded proposal.
