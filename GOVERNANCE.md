@@ -6,7 +6,7 @@ This repository uses accountable human stewardship during its foundation stage.
 
 - `@velinov` — Administrator and Primary Maintainer
 - `@pesho-vsn` — Administrator and Primary Maintainer
-- `@JordyVelinovGit` — Maintainer and Code Owner
+- `@JordyVelinovGit` — Organization Owner, Maintainer, and Code Owner; owner authority is retained for operational continuity and backup organization administration
 
 The current scope and operating rules are recorded in [MAINTAINERS.md](MAINTAINERS.md) and `.github/CODEOWNERS`. Repository administration or code ownership does not by itself grant certification authority, institutional representation, conformance approval, or the right to bypass review.
 
